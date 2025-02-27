@@ -7,44 +7,44 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "How long does software development take?",
-      answer: "The development timeline varies based on project complexity, features, and scope. We provide detailed estimates after analyzing your requirements."
+      question: "What makes Codient Systems different from other software companies?",
+      answer: "Codient Systems stands out with our innovative approach, experienced team, and commitment to delivering cutting-edge solutions tailored to each client's unique needs."
     },
     {
-      question: "How much will the APPWRK developers' work cost?",
-      answer: "Cost depends on project requirements, complexity, and timeline. We offer competitive rates and transparent pricing after thorough project analysis."
+      question: "What is the typical investment range for projects at Codient Systems?",
+      answer: "Project investments vary based on scope, complexity, and requirements. We provide transparent pricing and flexible engagement models to suit different budgets and needs."
     },
     {
-      question: "Should I be familiar with the technical details to work with you?",
-      answer: "No, you don't need technical expertise. Our team will guide you through the process and explain everything in simple terms."
+      question: "Do you offer consultation services before project commencement?",
+      answer: "Yes, we provide comprehensive consultation services to understand your vision, analyze requirements, and suggest the best technical approach for your project."
     },
     {
-      question: "What information do you need from me to start work?",
-      answer: "We need your project requirements, goals, target audience, desired features, and timeline. Our team will help gather all necessary details."
+      question: "What is your development process like?",
+      answer: "We follow an agile methodology with regular client communication, iterative development, and continuous feedback integration to ensure project success."
     },
     {
-      question: "How do you guarantee the product quality?",
-      answer: "We implement rigorous quality assurance processes, regular testing, and follow industry best practices to ensure high-quality deliverables."
+      question: "How do you ensure project security and confidentiality?",
+      answer: "We implement robust security measures, follow industry best practices, and sign NDAs to protect your intellectual property and sensitive information."
     },
     {
-      question: "Do you provide product support services after the app development is complete?",
-      answer: "Yes, we offer post-development support and maintenance services to ensure your application runs smoothly."
+      question: "What kind of post-launch support does Codient Systems provide?",
+      answer: "We offer comprehensive post-launch support including maintenance, updates, performance monitoring, and technical assistance to ensure long-term success."
     },
     {
-      question: "I need an app for iOS and Android. Which platform is better to start with?",
-      answer: "The choice depends on your target audience and market strategy. We can help you analyze and decide the best approach for your specific needs."
+      question: "Can you help with both web and mobile app development?",
+      answer: "Yes, we specialize in both web and mobile app development, offering cross-platform solutions using the latest technologies and frameworks."
     },
     {
-      question: "What technologies and programming languages do you utilize in your work?",
-      answer: "We use modern technologies including React, Node.js, Python, Swift, Kotlin, and more, choosing the best stack for your specific requirements."
+      question: "What industries do you specialize in?",
+      answer: "We have expertise across various industries including healthcare, finance, e-commerce, education, and technology, delivering customized solutions for each sector."
     },
     {
-      question: "Will you sign an NDA?",
-      answer: "Yes, we're happy to sign NDAs to protect your intellectual property and ensure confidentiality."
+      question: "How do you handle project timelines and deadlines?",
+      answer: "We maintain strict project management practices with clear milestones, regular updates, and proactive communication to ensure timely delivery."
     },
     {
-      question: "How long do I have to wait before the work on my project starts?",
-      answer: "We typically begin projects within 1-2 weeks after agreement finalization, depending on team availability and project scope."
+      question: "What is your team's expertise level?",
+      answer: "Our team consists of senior developers, designers, and project managers with extensive experience in delivering complex software solutions across various technologies."
     }
   ];
 

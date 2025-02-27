@@ -103,17 +103,17 @@ export default function Footer() {
             <div>
               <h4 className="text-lg mb-4">Have Questions?</h4>
               <div className="space-y-2">
-                <p className="text-2xl font-bold">+1.718.313.0706</p>
+                <p className="text-2xl font-bold">+1.987-654-321</p>
                 <div className="flex items-center space-x-2 text-sm text-gray-300">
                   <Mail className="w-4 h-4" />
-                  <span>contact@appwrk.com</span>
+                  <span>contact@Codientsystems.com</span>
                 </div>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg mb-4">For Business enquiry</h4>
-              <p className="text-gray-300">+91-986-500-0760</p>
+              <p className="text-gray-300">+91-987-654-321</p>
             </div>
 
             <div>
@@ -126,7 +126,7 @@ export default function Footer() {
 
           <div className="flex justify-between items-center mt-12">
             <p className="text-sm text-gray-300">
-              © 2025 APPWRK IT Solutions. All rights reserved.
+              © 2025 CODIENT . All rights reserved.
             </p>
             <div className="flex space-x-4">
               <Linkedin className="w-5 h-5 text-gray-300 hover:text-white cursor-pointer" />

@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'APPWRK - Transform Your Business with Latest Technology Solutions',
-  description: 'APPWRK is a leading software development company providing cutting-edge technology solutions for businesses worldwide.',
+  title: 'Codient Systems - Transforming Ideas into Digital Excellence',
+  description: 'Codient Systems is a leading software development company delivering innovative technology solutions and digital transformation services for businesses worldwide.',
 };
 
 export default function RootLayout({
