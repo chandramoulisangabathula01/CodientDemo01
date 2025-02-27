@@ -50,7 +50,7 @@ export default function Hero() {
     <div className="md:h-[912px] h-[calc(100vh-80px)] relative  bg-[#1a1245] overflow-x-hidden">
       {/* Background pattern */}
       <video 
-        src="/bgvideo.mp4"
+        src="/bgvideo2.mp4"
         autoPlay
         muted
         loop
@@ -80,7 +80,7 @@ export default function Hero() {
         </Link> */}
 
         <motion.h1
-          className="md:text-4xl text-3xl font-bold text-center text-white md:w-3/6 w-full  px-4"
+          className="text-center text-white md:w-5/6 w-full  px-4 bg-gradient-to-br dark:from-black from-white from-30% dark:to-black/40 to-white bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter  text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in [--animation-delay:200ms]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -90,7 +90,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="md:text-xl text-sm font-medium leading-[23px] text-center tracking-normal max-w-2xl mx-auto w-[95%] mt-9 text-white px-4"
+          className="font-medium leading-[23px] text-center  max-w-2xl mx-auto w-[95%]   px-4 mb-8 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}

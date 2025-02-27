@@ -343,10 +343,10 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Custom Software Development",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        Tailored software solutions to meet your business needs.
       </span>
     ),
     header: <SkeletonOne />,
@@ -354,10 +354,10 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Cloud Solutions",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        Secure and scalable cloud infrastructure services.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -365,10 +365,10 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "Digital Transformation",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+        Transform your business with cutting-edge technology.
       </span>
     ),
     header: <SkeletonThree />,
@@ -376,22 +376,21 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Enterprise Solutions",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Comprehensive IT solutions for enterprise-level businesses.
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
-
   {
-    title: "Text Summarization",
+    title: "IT Consulting",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        Expert guidance for your technology initiatives.
       </span>
     ),
     header: <SkeletonFive />,
