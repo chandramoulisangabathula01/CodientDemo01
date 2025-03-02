@@ -47,7 +47,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className="md:h-[912px] h-[calc(100vh-80px)] relative  bg-[#1a1245] overflow-x-hidden">
+    <div className="md:h-[912px] h-[calc(100vh-80px)] relative bg-gradient-to-b from-[#0B1120] via-[#1E293B] to-[#334155] overflow-x-hidden">
       {/* Background pattern */}
       <video 
         src="/bgvideo2.mp4"
@@ -69,61 +69,81 @@ export default function Hero() {
       </div> */}
 
       {/* Main content */}
-      <div className="w-full h-full flex flex-col items-center justify-center pb-20">
-        {/* <Link href="/blog/Artificial-Intelligence">
-          <div className="md:w-[459px] w-full max-w-[320px] md:h-10 h-9 rounded-xl bg-emerald-500/50 flex items-center justify-center md:gap-3 gap-1">
-           
-            <p className="md:text-base text-xs font-semibold text-center px-2">
-              New! Record user interviews without recording bots
-            </p>
-          </div>
-        </Link> */}
+      <div className="w-full h-full flex flex-col items-center justify-center pb-20 relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="absolute top-10 left-10 w-20 h-20 bg-teal-500/20 rounded-full blur-xl"
+        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="absolute bottom-20 right-10 w-32 h-32 bg-indigo-500/20 rounded-full blur-xl"
+        />
 
         <motion.h1
-          className="text-center text-white md:w-5/6 w-full  px-4 bg-gradient-to-br dark:from-black from-white from-30% dark:to-black/40 to-white bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter  text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in [--animation-delay:200ms]"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-center text-white md:w-5/6 w-full px-4 bg-gradient-to-br from-white via-teal-200 to-indigo-300 bg-clip-text py-6 text-5xl font-bold leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl"
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Elevate Your Business with Cutting-Edge Digital Innovation
-
+          Elevate Your Business with
+          <span className="block mt-2 bg-gradient-to-r from-teal-400 to-indigo-500 bg-clip-text">
+            Cutting-Edge Digital Innovation
+          </span>
         </motion.h1>
 
         <motion.p
-          className="font-medium leading-[23px] text-center  max-w-2xl mx-auto w-[95%]   px-4 mb-8 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]"
+          className="font-medium leading-relaxed text-center max-w-2xl mx-auto w-[95%] px-4 mb-12 text-lg tracking-tight text-gray-300 md:text-xl text-balance"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Record and organize user interviews automatically. Focus on what matters - connecting with users.
+          Transform your business with our innovative solutions. We bring your ideas to life with cutting-edge technology and expert craftsmanship.
         </motion.p>
 
-        <Link href="/sign-up">
-          <motion.button
-            className="flex items-center justify-center w-auto pr-2 pl-2 h-12 mt-9 rounded-xl border border-white bg-transparent text-base font-semibold text-white hover:scale-105 transition-transform"
-            style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px 4px 14.8px' }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            Get Your Free Consultation
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-arrow-right h-4 w-4 ml-2"
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 items-center justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <Link href="/sign-up">
+            <motion.button
+              className="flex items-center justify-center px-8 h-14 rounded-full bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-semibold text-lg hover:scale-105 transition-transform shadow-lg hover:shadow-teal-500/25"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </motion.button>
-        </Link>
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="ml-2 h-5 w-5"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </motion.button>
+          </Link>
+          <Link href="#contact">
+            <motion.button
+              className="flex items-center justify-center px-8 h-14 rounded-full border-2 border-white/20 text-white font-semibold text-lg hover:bg-white/10 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Us
+            </motion.button>
+          </Link>
+        </motion.div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const testimonials = [
     name: "Daniela Christiansson",
     role: "CEO at Digital Space",
     rating: 5,
-    text: "APPWRK helped us more than what we agreed on. Their expertise and dedication exceeded our expectations, delivering results that transformed our business.",
+    text: "Codient helped us more than what we agreed on. Their expertise and dedication exceeded our expectations, delivering results that transformed our business.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Oliver Garcia",
     role: "Product Manager",
     rating: 5,
-    text: "We were so impressed with the project execution. APPWRK's ability to understand our vision and translate it into reality was truly remarkable.",
+    text: "We were so impressed with the project execution. Codient's ability to understand our vision and translate it into reality was truly remarkable.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
   }
 ];
@@ -35,7 +35,7 @@ export default function Testimonials() {
           <div className="max-w-2xl">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">What Our Clients Love About Us</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              At APPWRK, we transform your ideas into reality. Trusted by 250+ satisfied customers worldwide, we deliver exceptional results that drive business growth.
+              At Codient, we transform your ideas into reality. Trusted by 250+ satisfied customers worldwide, we deliver exceptional results that drive business growth.
             </p>
           </div>
           <div className="flex items-center space-x-4">

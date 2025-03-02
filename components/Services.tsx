@@ -85,24 +85,44 @@ export default function Services() {
               }}
               className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-200 flex flex-col h-full border border-transparent hover:border-blue-100 group cursor-pointer hover:bg-blue-600"
             >
-              <div className="mb-4 bg-blue-50 w-fit rounded-lg p-3 inline-block group-hover:bg-white transition-colors duration-200">
-                {React.createElement(service.icon, { 
-                  className: "w-8 h-8 text-blue-600 group-hover:text-blue-600 transform group-hover:scale-105 transition-all duration-200" 
-                })}
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-blue-50 w-fit rounded-lg p-3 inline-block group-hover:bg-white transition-colors duration-200">
+                  {React.createElement(service.icon, { 
+                    className: "w-8 h-8 text-blue-600 group-hover:text-blue-600 transform group-hover:scale-105 transition-all duration-200" 
+                  })}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-200">
+                  {service.title}
+                </h3>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors duration-200">
-                {service.title}
-              </h3>
               <p className="text-gray-600 mb-4 leading-relaxed flex-grow group-hover:text-white/90">
                 {service.description}
               </p>
-              <motion.button 
-                whileHover={{ x: 5 }}
-                className="text-blue-600 group-hover:text-white inline-flex items-center font-medium transition-colors duration-200 mt-auto group-hover:font-semibold"
-              >
-                Explore Service 
-                <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
-              </motion.button>
+              <div className="mt-auto flex justify-end">
+                <motion.button 
+                  whileHover={{ x: 5 }}
+                  className="text-blue-600 group-hover:text-white inline-flex items-center font-medium transition-colors duration-200 group-hover:font-semibold"
+                >
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore Service</span>
+                  <div className="ml-2 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center group-hover:bg-white transition-colors duration-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-4 w-4 text-white transform group-hover:-rotate-45 group-hover:text-blue-600 transition-all duration-200"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </div>
+                </motion.button>
+              </div>
             </motion.div>
           ))}
         </div>

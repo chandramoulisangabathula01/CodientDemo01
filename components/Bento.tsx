@@ -19,8 +19,8 @@ export function BentoGridThirdDemo() {
     <>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
-          <h3 className="text-blue-600 font-medium mb-2">About Us</h3>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h3 className="text-teal-600 font-medium mb-2">About Us</h3>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
             We are diverse, passionate tech enthusiasts
           </h2>
           <p className="text-2xl w-3/4 text-gray-600">
@@ -336,7 +336,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <p className="text-xs text-neutral-500">Use PHP.</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500 flex-shrink-0" />
       </motion.div>
     </motion.div>
   );
